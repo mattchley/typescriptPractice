@@ -12,6 +12,13 @@ function test3(params: string): string {
     return params;
 }
 
+// return obj
+function test3a(): { name: string; age: number } {
+    return {
+        name: "John Doe", age: 20,
+    };
+}
+
 const test4 = (testString: string): string => testString;
 
 // optional paramaters
