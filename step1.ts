@@ -56,3 +56,15 @@ color = "red";
 // are set array structures by type still have the array functionality in JS add/remove as well as destructing
 // let [firstValue, secondValue] =tuple;
 let tuple: [string, number] = ["hello", 1]
+
+// Enums
+// Defined set of properties
+enum WeatherConditions {
+    // if no value is assigned to the poroperty it returns the index
+    Sunny,
+    Cloudy = "cloudy",
+    Rainy = "rainy",
+    Snowy = "snowy",
+}
+console.log(WeatherConditions.Cloudy) // returns cloudy
+console.log(WeatherConditions.Sunny) // returns 0
